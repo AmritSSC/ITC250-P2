@@ -7,6 +7,8 @@
     <body>
         
         <?php
+// Here is the code for temperature conversion
+	    
             if(isset($_POST['temperature'])){//check if temperature have valid contents
                 $user_input=$_POST['temperature'];
                 
