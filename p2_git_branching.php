@@ -3,6 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <title>Temperature Converter</title>
+        <style>
+            h1{
+                text-align: center;
+                margin-bottom: 18px;
+            }
+            fieldset{
+                padding:10px;
+                width:40%;
+                margin:0 auto;
+            }
+        
+        </style>
     </head>
     <body>
         
@@ -98,8 +110,9 @@
         else{
         ?>
         <h1>Temperature converter</h1>
-        <br>
+        
         <form action="<? print $_SERVER['PHP_SELF']; ?>" method="post">
+            <fieldset>
             <p>Please enter the temperature you want to convert? &nbsp &nbsp<input type="text" name="temperature"></p>
             <input type="radio" name="converter" value="ftc"> Fahrenheit to Celsius   <br>
 			<input type="radio" name="converter" value="ftk"> Fahrenheit to Kelvin    <br>
@@ -108,6 +121,7 @@
             <input type="radio" name="converter" value="ktc"> Kelvin     to Celsius   <br>
             <input type="radio" name="converter" value="ktf"> Kelvin     to Fahrenheit<br><br>
             <input type="submit" value="Convert">
+                </fieldset>
         </form>
         <?php
             }
