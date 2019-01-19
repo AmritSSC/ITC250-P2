@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Temperature converter</title>
+        <title>Temperature Converter</title>
     </head>
     <body>
         
