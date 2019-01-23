@@ -21,10 +21,10 @@
         <?php
 // Here is the code for temperature conversion
 	    
-            if(isset($_POST['temperature'])){//check if temperature have valid contents
+            if(isset($_POST['temperature'])){//check if temperature box has valid contents
                 $user_input=$_POST['temperature'];
                 
-                if(is_numeric($user_input)){//check if user entered a number or not
+                if(is_numeric($user_input)){//check if user entered a numbe
                     
                     $selection=$_POST['converter'];
                     
@@ -108,8 +108,9 @@
                 }
             }
         else{
-        ?>
+        ?> 
         <h1>Temperature converter</h1>
+	    <!--Here is the form for the user to fill out-->
         <form action="<? print $_SERVER['PHP_SELF']; ?>" method="post">
             <fieldset>
             <p>Please enter the temperature you want to convert? &nbsp &nbsp<input type="text" name="temperature"></p>
