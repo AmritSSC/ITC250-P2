@@ -110,7 +110,6 @@
         else{
         ?>
         <h1>Temperature converter</h1>
-        
         <form action="<? print $_SERVER['PHP_SELF']; ?>" method="post">
             <fieldset>
             <p>Please enter the temperature you want to convert? &nbsp &nbsp<input type="text" name="temperature"></p>
