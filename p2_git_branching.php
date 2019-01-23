@@ -1,4 +1,5 @@
 <?php
+//    for BRANCH CHANGE MERGE comment added here
 // Here is the code for temperature conversion
 	    
             if(isset($_POST['temperature'])){//check if temperature box has valid contents
