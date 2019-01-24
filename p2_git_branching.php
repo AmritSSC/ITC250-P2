@@ -1,5 +1,4 @@
 <?php
-//    for BRANCH CHANGE MERGE comment added here
 // Here is the code for temperature conversion
 	    
     if(isset($_POST['temperature'])){//check if temperature box has valid contents
@@ -92,7 +91,7 @@
 	?> 
 
 	<h1>Temperature converter</h1>
-	    <!--Here is the form for the user to fill out-->
+	    <!--Here is the form-->
 	<form action="<? print $_SERVER['PHP_SELF']; ?>" method="post">
 	    <fieldset>
 	    <p>Please enter the temperature you want to convert? &nbsp &nbsp<input type="text" name="temperature"></p>
