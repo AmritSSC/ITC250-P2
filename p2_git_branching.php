@@ -1,24 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Temperature Converter</title>
-        <style>
-            h1{
-                text-align: center;
-                margin-bottom: 18px;
-            }
-            fieldset{
-                padding:10px;
-                width:40%;
-                margin:0 auto;
-            }
-        
-        </style>
-    </head>
-    <body>
-       
-        <?php
+<?php
+//    for BRANCH CHANGE MERGE comment added here
 // Here is the code for temperature conversion
 	    
             if(isset($_POST['temperature'])){//check if temperature box has valid contents
@@ -126,5 +107,4 @@
         <?php
             }
         ?>
-    </body>
-</html>
+
