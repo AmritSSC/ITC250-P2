@@ -4,12 +4,12 @@
     if(isset($_POST['temperature'])){//check if temperature box has valid contents
 	$user_input=$_POST['temperature'];
 
-	if(is_numeric($user_input)){//check if user entered a numbe
+	if(is_numeric($user_input)){//check if user entered a number
 
 	    $selection=$_POST['converter'];
 
 	    switch($selection){//check user radio button selection
-		case 'ftc':
+		case 'ftc': //fahrenheit to celsius
 			if($user_input < -459.67)
 			{
 				echo '<h1>User, please enter a Fahrenheit number > than or equal to -459.67 (absolute zero)</h1>';
@@ -20,7 +20,7 @@
 			echo '<h1>'. $user_input . ' Fahrenheit is about '. round($result,2) . ' Celsius.</h1><br><br><br>';
 			print '<a href="' . $_SERVER['PHP_SELF'] . '">Go back to start a new conversion</a>';
 			break;
-		case 'ftk':
+		case 'ftk':// fahrenheit to kelvin
 			if($user_input < -459.67)
 			{
 				echo '<h1>User, please enter a Fahrenheit number > than or equal to -459.67 (absolute zero)</h1>';
